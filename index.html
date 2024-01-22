@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form example">
+    <title>Carousel of Happiness</title>
+
+    <style>
+        .text-center {
+            text-align: center;
+        }
+
+        .text-white {
+            color: white;
+        }
+
+        .logo {
+            align-content: center;
+            display: block;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .poster {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .thank_you_message {
+            width: 50%;
+            align-content: center;
+            display: none;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: None; /* Hidden by default */
+            position: absolute; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */;
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: rgba(0, 0, 0, 0.8);
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            align-content: center;
+            display: grid;
+            position: relative;
+        }
+
+        body {
+            background-color: #7B76B7
+        }
+    </style>
+</head>
+
+<body data-new-gr-c-s-check-loaded="8.909.0" data-gr-ext-installed="" class="text-white">
+<div>
+    <img src="pics/logo-title.png" alt="logo image" class="logo"/>
+    <img src="pics/poster-cropped.png" alt="poster image" class="poster"/>
+</div>
+<div>
+    <p class="text-center">
+        We would <em>love</em> to hear from you!
+    </p>
+
+</div>
+
+<link rel="stylesheet" href="assets/pure-min.css">
+<link rel="stylesheet" href="assets/font-awesome.min.css">
+<link rel="stylesheet" href="assets/style.css">
+
+<form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+      action="https://script.google.com/macros/s/AKfycbzLFDl08G7d_shHo_yK9hz1wkKFLr8YVN8xBqS-EQfCaWv8GxeKYDycpS58ViRpGW62/exec">
+
+    <div class="form-elements">
+        <fieldset class="pure-group">
+            <label for="name">What's your name?</label>
+            <input id="name" name="name" placeholder="Name or Group Name" value="TestName"
+                   style="background-color: #9BCC53">
+        </fieldset>
+
+        <fieldset class="pure-group">
+            <label for="location">Where are you visiting from?</label>
+            <input id="location" name="location" placeholder="Where are you visiting from?" value="TestLocation"
+                   style="background-color: #9BCC53">
+        </fieldset>
+
+        <fieldset class="pure-group">
+            <label for="message">What did you think? </label>
+            <textarea id="message" name="message" rows="10" placeholder="Tell us what's on your mind..."
+                      style="background-color: #9BCC53">test message</textarea>
+        </fieldset>
+
+        <fieldset class="pure-group">
+            <label for="email">Email Address:</label>
+            <input id="email" name="email" type="email" required="" placeholder="your.name@email.com"
+                   value="test@email.com" style="background-color: #9BCC53">
+        </fieldset>
+
+        <fieldset class="pure-checkbox" style="display: flex">
+            <input id="subscription" name="subscription" type="checkbox">
+            <label for="subscription" style="margin-left: 10px">I would like to sign up for the carousel news and updates</label>
+        </fieldset>
+
+        <button class="button-success pure-button button-xlarge">
+            <i class="fa fa-paper-plane"></i>&nbsp;Send
+        </button>
+    </div>
+
+    <section class="modal">
+        <div class="modal-content">
+            <h2 style="margin: auto; padding-bottom: 20px; padding-top: 10px">Thanks for your feedback!</h2>
+            <img src="pics/girl-on-chicken.jpg" alt="girl on chicken image" width=100% style="padding-bottom: 20px"/>
+            <input id="resetForm" type="button" value="Okay" class="button-success pure-button button-xlarge"
+                   onclick="resetForm();"/>
+        </div>
+    </section>
+
+</form>
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div>
+    Keep the Carousel Spinning!  We are a 501c3 organization, Tax ID # 20-3584335 and your donations to the Carousel are tax-deductible.
+
+    Our century-old carousel and band organ rely on your contributions to keep our doors open year-round, and ensure we keep spinning!
+    Donate today!
+</div>
+
+<script data-cfasync="false" src="assets/form-submission-handler.js"></script>
+
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</html>
